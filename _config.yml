@@ -1,0 +1,87 @@
+# ----
+# Site
+
+title: kringeki69
+url: 
+baseurl:
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: 
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name:
+  links:
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _icon: account_circle
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+          uploads_dir: "/images/posts/"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+donation_embed: 
+newsletter_action: 
+
+
+jekyllfaces:
+  font_icons: # uncomment the icons sets you would like to use
+    - font-awesome # <i class="fa fa-address-book"></i>
+    #- foundation # <i class="fi-address-book"></i>
+    #- glyphicons # <i class="glyphicon glyphicon-adjust"></i>
+    #- icomoon # <i class="icomoon icon-accessibility"></i>
+    #- ionicons # <i class="ionicons ion-alert"></i>
+    #- material-design # <i class="material-icons">3d_rotation</i>
+    #- octicons # <i class="mega-octicon octicon-alert"></i>
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880

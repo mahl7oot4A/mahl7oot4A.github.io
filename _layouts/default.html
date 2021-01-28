@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% seo %}
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
+		<script>
+  			(function (s, e, n, d, er) {
+   			s['Sender'] = er;
+    			s[er] = s[er] || function () {
+      			(s[er].q = s[er].q || []).push(arguments)
+    			}, s[er].l = 1 * new Date();
+    			var a = e.createElement(n),
+        		m = e.getElementsByTagName(n)[0];
+    			a.async = 1;
+    			a.src = d;
+    			m.parentNode.insertBefore(a, m)
+  			})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  			sender('d1fef85b894956')
+		</script>
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<a href="{{ site.baseurl }}">{% include logo.html %}</a>
+			</div>
+		</nav>
+		<div class="content">
+			{{ content }}
+		</div>
+		
+		<p class="copyright">
+			<a href="https://cloudcannon.com/">
+				Template by CloudCannon
+		</p>
+	</body>
+</html>
